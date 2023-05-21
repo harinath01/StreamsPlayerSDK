@@ -20,8 +20,8 @@
 		03ABC3B82A134EAA00B0A3D4 /* StreamsPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3B72A134EAA00B0A3D4 /* StreamsPlayerView.swift */; };
 		03ABC3BB2A13565600B0A3D4 /* StreamsPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3BA2A13565600B0A3D4 /* StreamsPlayerError.swift */; };
 		03ABC3C92A138B1E00B0A3D4 /* VideoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3C82A138B1E00B0A3D4 /* VideoDetails.swift */; };
-		03ABC3CF2A138EFF00B0A3D4 /* StreamsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3CE2A138EFF00B0A3D4 /* StreamsClient.swift */; };
-		03C94F1D2A13A85600ED354D /* StreamingClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C94F1C2A13A85600ED354D /* StreamingClientProtocol.swift */; };
+		03ABC3CF2A138EFF00B0A3D4 /* StreamsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */; };
+		03C94F1D2A13A85600ED354D /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C94F1C2A13A85600ED354D /* APIClientProtocol.swift */; };
 		03CEE1AF2A17456F00BBCF0D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03CEE1AE2A17456F00BBCF0D /* Alamofire */; };
 		03CEE1B12A17488900BBCF0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEE1B02A17488900BBCF0D /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -75,8 +75,8 @@
 		03ABC3B72A134EAA00B0A3D4 /* StreamsPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerView.swift; sourceTree = "<group>"; };
 		03ABC3BA2A13565600B0A3D4 /* StreamsPlayerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerError.swift; sourceTree = "<group>"; };
 		03ABC3C82A138B1E00B0A3D4 /* VideoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetails.swift; sourceTree = "<group>"; };
-		03ABC3CE2A138EFF00B0A3D4 /* StreamsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsClient.swift; sourceTree = "<group>"; };
-		03C94F1C2A13A85600ED354D /* StreamingClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingClientProtocol.swift; sourceTree = "<group>"; };
+		03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsAPIClient.swift; sourceTree = "<group>"; };
+		03C94F1C2A13A85600ED354D /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
 		03CEE1B02A17488900BBCF0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,7 +206,7 @@
 		03ABC3CB2A138E9800B0A3D4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				03ABC3CE2A138EFF00B0A3D4 /* StreamsClient.swift */,
+				03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 		03C94F1B2A13A4CD00ED354D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				03C94F1C2A13A85600ED354D /* StreamingClientProtocol.swift */,
+				03C94F1C2A13A85600ED354D /* APIClientProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -359,11 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03ABC3CF2A138EFF00B0A3D4 /* StreamsClient.swift in Sources */,
+				03ABC3CF2A138EFF00B0A3D4 /* StreamsAPIClient.swift in Sources */,
 				03ABC3C92A138B1E00B0A3D4 /* VideoDetails.swift in Sources */,
 				03ABC3B82A134EAA00B0A3D4 /* StreamsPlayerView.swift in Sources */,
 				03ABC3BB2A13565600B0A3D4 /* StreamsPlayerError.swift in Sources */,
-				03C94F1D2A13A85600ED354D /* StreamingClientProtocol.swift in Sources */,
+				03C94F1D2A13A85600ED354D /* APIClientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

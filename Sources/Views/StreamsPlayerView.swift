@@ -20,7 +20,7 @@ open class StreamsPlayerView: UIView {
         self.videoId = videoId
         self.accessToken = accessToken
         self.backgroundColor = .black
-        self.initializePlayer()
+        self.configurePlayerWithVideo()
     }
     
     private func validateArguments(orgCode: String!, videoId: String!, accessToken: String!) throws {
@@ -37,23 +37,29 @@ open class StreamsPlayerView: UIView {
         }
     }
     
-    private func initializePlayer(){
-        StreamingClient.fetchVideo(orgCode: orgCode, videoId: videoId, accessToken: accessToken) { videoDetails, error in
+    private func configurePlayerWithVideo(){
+        APIClient.fetchVideo(orgCode: orgCode, videoId: videoId, accessToken: accessToken){ videoDetails, error in
             if let videoDetails = videoDetails {
-                let playerItem = self.getPlayerItem(url: URL(string: videoDetails.playbackURL)!)
-                self.player = AVPlayer(playerItem: playerItem)
-                self.playerLayer = AVPlayerLayer(player: self.player)
-                self.playerLayer.frame = self.bounds
-                self.layer.addSublayer(self.playerLayer)
-                self.player.play()
+                self.setupPlayer(with: videoDetails.playbackURL)
             } else if let error = error {
                 debugPrint(error.localizedDescription)
             }
         }
     }
     
-    private func getPlayerItem(url: URL) -> AVPlayerItem{
-        let asset = AVURLAsset(url: url)
-        return AVPlayerItem(asset: asset)
+    private func setupPlayer(with playbackURL: String) {
+        guard let url = URL(string: playbackURL) else {
+            return
+        }
+        
+        player = AVPlayer(url: url)
+        addPlayerLayerToView()
+        player.play()
+    }
+    
+    private func addPlayerLayerToView() {
+        playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = bounds
+        layer.addSublayer(playerLayer)
     }
 }

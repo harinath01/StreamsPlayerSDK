@@ -1,8 +1,9 @@
 import Foundation
 import Alamofire
 
-class StreamingClient: StreamingClientProtocol {
-    static let VIDEO_DETAIL_API = "https://app.tpstreams.com/api/v1/%@/assets/%@/?access_token=%@"
+let VIDEO_DETAIL_API = "https://app.tpstreams.com/api/v1/%@/assets/%@/?access_token=%@"
+
+class APIClient: APIClientProtocol {
     
     static func fetchVideo(orgCode: String!, videoId: String!, accessToken: String!, completion: @escaping (VideoDetails?, Error?) -> Void) {
         let url = String(format: VIDEO_DETAIL_API, orgCode, videoId, accessToken)
@@ -22,7 +23,7 @@ class StreamingClient: StreamingClientProtocol {
         }
     }
     
-    private static func parseVideoDetails(data: Data) throws -> VideoDetails {        
+    private static func parseVideoDetails(data: Data) throws -> VideoDetails {
         guard let responseDict = try JSONSerialization.jsonObject(with: data) as? [String: Any],
               let video = responseDict["video"] as? [String: Any],
               let videoId = responseDict["id"] as? String,

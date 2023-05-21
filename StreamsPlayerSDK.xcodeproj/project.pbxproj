@@ -10,6 +10,7 @@
 		03A0288D2A14B38A00E77495 /* StreamsPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0288C2A14B38A00E77495 /* StreamsPlayerViewController.swift */; };
 		03A0288E2A163C4500E77495 /* StreamsPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; };
 		03A0288F2A163C4500E77495 /* StreamsPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03A7F7542A1A2C0C005D8BA0 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */; };
 		03ABC3832A12566E00B0A3D4 /* StreamsPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; };
 		03ABC3882A12566E00B0A3D4 /* StreamsPlayerSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3872A12566E00B0A3D4 /* StreamsPlayerSDKTests.swift */; };
 		03ABC3A32A127D7A00B0A3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3A22A127D7A00B0A3D4 /* AppDelegate.swift */; };
@@ -21,7 +22,6 @@
 		03ABC3BB2A13565600B0A3D4 /* StreamsPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3BA2A13565600B0A3D4 /* StreamsPlayerError.swift */; };
 		03ABC3C92A138B1E00B0A3D4 /* VideoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3C82A138B1E00B0A3D4 /* VideoDetails.swift */; };
 		03ABC3CF2A138EFF00B0A3D4 /* StreamsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */; };
-		03C94F1D2A13A85600ED354D /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C94F1C2A13A85600ED354D /* APIClientProtocol.swift */; };
 		03CEE1AF2A17456F00BBCF0D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03CEE1AE2A17456F00BBCF0D /* Alamofire */; };
 		03CEE1B12A17488900BBCF0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEE1B02A17488900BBCF0D /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		03A0288C2A14B38A00E77495 /* StreamsPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerViewController.swift; sourceTree = "<group>"; };
+		03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIClient.swift; sourceTree = "<group>"; };
 		03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamsPlayerSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ABC3822A12566E00B0A3D4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ABC3872A12566E00B0A3D4 /* StreamsPlayerSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerSDKTests.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		03ABC3BA2A13565600B0A3D4 /* StreamsPlayerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerError.swift; sourceTree = "<group>"; };
 		03ABC3C82A138B1E00B0A3D4 /* VideoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetails.swift; sourceTree = "<group>"; };
 		03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsAPIClient.swift; sourceTree = "<group>"; };
-		03C94F1C2A13A85600ED354D /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
 		03CEE1B02A17488900BBCF0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,6 @@
 		03ABC37A2A12566E00B0A3D4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				03C94F1B2A13A4CD00ED354D /* Protocols */,
 				03ABC3CB2A138E9800B0A3D4 /* Network */,
 				03ABC3BC2A13610100B0A3D4 /* Models */,
 				03ABC3B92A13564100B0A3D4 /* Errors */,
@@ -207,16 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */,
+				03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		03C94F1B2A13A4CD00ED354D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				03C94F1C2A13A85600ED354D /* APIClientProtocol.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,11 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A7F7542A1A2C0C005D8BA0 /* BaseAPIClient.swift in Sources */,
 				03ABC3CF2A138EFF00B0A3D4 /* StreamsAPIClient.swift in Sources */,
 				03ABC3C92A138B1E00B0A3D4 /* VideoDetails.swift in Sources */,
 				03ABC3B82A134EAA00B0A3D4 /* StreamsPlayerView.swift in Sources */,
 				03ABC3BB2A13565600B0A3D4 /* StreamsPlayerError.swift in Sources */,
-				03C94F1D2A13A85600ED354D /* APIClientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

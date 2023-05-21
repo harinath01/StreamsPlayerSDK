@@ -38,7 +38,7 @@ open class StreamsPlayerView: UIView {
     }
     
     private func configurePlayerWithVideo(){
-        APIClient.fetchVideo(orgCode: orgCode, videoId: videoId, accessToken: accessToken){ videoDetails, error in
+        StreamsAPIClient.fetchVideo(orgCode: orgCode, videoId: videoId, accessToken: accessToken){ videoDetails, error in
             if let videoDetails = videoDetails {
                 self.setupPlayer(with: videoDetails.playbackURL)
             } else if let error = error {

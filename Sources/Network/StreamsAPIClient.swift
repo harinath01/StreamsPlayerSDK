@@ -1,28 +1,11 @@
 import Foundation
 import Alamofire
 
-let VIDEO_DETAIL_API = "https://app.tpstreams.com/api/v1/%@/assets/%@/?access_token=%@"
-
-class APIClient: APIClientProtocol {
-    static func fetchVideo(orgCode: String!, videoId: String!, accessToken: String!, completion: @escaping (VideoDetails?, Error?) -> Void) {
-        let url = String(format: VIDEO_DETAIL_API, orgCode, videoId, accessToken)
-        
-        AF.request(url).responseData { response in
-            switch response.result {
-            case .success(let data):
-                do {
-                    let videoDetails = try parseVideoDetails(data: data)
-                    completion(videoDetails, nil)
-                } catch {
-                    completion(nil, error)
-                }
-            case .failure(let error):
-                completion(nil, error)
-            }
-        }
+class StreamsAPIClient: BaseAPIClient {
+    class override var VIDEO_DETAIL_API: String {  return "https://app.tpstreams.com/api/v1/%@/assets/%@/?access_token=%@"
     }
     
-    private static func parseVideoDetails(data: Data) throws -> VideoDetails {
+    override class func parseVideoDetails(data: Data) throws -> VideoDetails {
         guard let responseDict = try JSONSerialization.jsonObject(with: data) as? [String: Any],
               let video = responseDict["video"] as? [String: Any],
               let videoId = responseDict["id"] as? String,

@@ -28,7 +28,6 @@ class APIClient: APIClientProtocol {
               let videoId = responseDict["id"] as? String,
               let title = responseDict["title"] as? String,
               let playbackURL = video["playback_url"] as? String,
-              let isDRMProtected = video["enable_drm"] as? Bool,
               let transcodingStatus = video["status"] as? String else {
             throw NSError(domain: "InvalidResponseError", code: 0)
         }
@@ -36,7 +35,6 @@ class APIClient: APIClientProtocol {
         return VideoDetails(videoId: videoId,
                             title: title,
                             playbackURL: playbackURL,
-                            isDRMProtected: isDRMProtected,
                             transcodingStatus: transcodingStatus)
     }
 }

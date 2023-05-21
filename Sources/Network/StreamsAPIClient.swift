@@ -4,7 +4,6 @@ import Alamofire
 let VIDEO_DETAIL_API = "https://app.tpstreams.com/api/v1/%@/assets/%@/?access_token=%@"
 
 class APIClient: APIClientProtocol {
-    
     static func fetchVideo(orgCode: String!, videoId: String!, accessToken: String!, completion: @escaping (VideoDetails?, Error?) -> Void) {
         let url = String(format: VIDEO_DETAIL_API, orgCode, videoId, accessToken)
         

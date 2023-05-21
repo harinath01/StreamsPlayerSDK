@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-class StreamsAPIClient: BaseAPIClient {
+class APIClient: BaseAPIClient {
     class override var VIDEO_DETAIL_API: String {  return "https://app.tpstreams.com/api/v1/%@/assets/%@/?access_token=%@"
     }
     

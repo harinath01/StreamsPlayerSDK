@@ -8,9 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		03A0288D2A14B38A00E77495 /* StreamsPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0288C2A14B38A00E77495 /* StreamsPlayerViewController.swift */; };
-		03A0288E2A163C4500E77495 /* StreamsPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; };
-		03A0288F2A163C4500E77495 /* StreamsPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03A7F7542A1A2C0C005D8BA0 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */; };
+		03A7F76E2A1A4AC7005D8BA0 /* TestpressPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7F76D2A1A4AC7005D8BA0 /* TestpressPlayerViewController.swift */; };
+		03A7F79D2A1A57AD005D8BA0 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */; };
+		03A7F79E2A1A57AD005D8BA0 /* VideoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3C82A138B1E00B0A3D4 /* VideoDetails.swift */; };
+		03A7F79F2A1A57AD005D8BA0 /* StreamsPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3B72A134EAA00B0A3D4 /* StreamsPlayerView.swift */; };
+		03A7F7A12A1A57AD005D8BA0 /* StreamsPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3BA2A13565600B0A3D4 /* StreamsPlayerError.swift */; };
+		03A7F7A92A1A5806005D8BA0 /* TestpressAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7F7662A1A47CC005D8BA0 /* TestpressAPIClient.swift */; };
+		03A7F7AA2A1A586F005D8BA0 /* TestpressPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A7F7A82A1A57AD005D8BA0 /* TestpressPlayerSDK.framework */; };
+		03A7F7AB2A1A586F005D8BA0 /* TestpressPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03A7F7A82A1A57AD005D8BA0 /* TestpressPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03A7F7AE2A1A5A1E005D8BA0 /* StreamsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */; };
+		03A7F7AF2A1A5D0D005D8BA0 /* StreamsPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; };
+		03A7F7B02A1A5D0D005D8BA0 /* StreamsPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03A7F7B42A1A5F03005D8BA0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03A7F7B32A1A5F03005D8BA0 /* Alamofire */; };
 		03ABC3832A12566E00B0A3D4 /* StreamsPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */; };
 		03ABC3882A12566E00B0A3D4 /* StreamsPlayerSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3872A12566E00B0A3D4 /* StreamsPlayerSDKTests.swift */; };
 		03ABC3A32A127D7A00B0A3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3A22A127D7A00B0A3D4 /* AppDelegate.swift */; };
@@ -21,12 +31,25 @@
 		03ABC3B82A134EAA00B0A3D4 /* StreamsPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3B72A134EAA00B0A3D4 /* StreamsPlayerView.swift */; };
 		03ABC3BB2A13565600B0A3D4 /* StreamsPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3BA2A13565600B0A3D4 /* StreamsPlayerError.swift */; };
 		03ABC3C92A138B1E00B0A3D4 /* VideoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3C82A138B1E00B0A3D4 /* VideoDetails.swift */; };
-		03ABC3CF2A138EFF00B0A3D4 /* StreamsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */; };
 		03CEE1AF2A17456F00BBCF0D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03CEE1AE2A17456F00BBCF0D /* Alamofire */; };
 		03CEE1B12A17488900BBCF0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEE1B02A17488900BBCF0D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		03A7F7AC2A1A586F005D8BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03ABC36F2A12566E00B0A3D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A7F7982A1A57AD005D8BA0;
+			remoteInfo = TestpressPlayerSDK;
+		};
+		03A7F7B12A1A5D0D005D8BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03ABC36F2A12566E00B0A3D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03ABC3772A12566E00B0A3D4;
+			remoteInfo = StreamsPlayerSDK;
+		};
 		03ABC3842A12566E00B0A3D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 03ABC36F2A12566E00B0A3D4 /* Project object */;
@@ -53,7 +76,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				03A0288F2A163C4500E77495 /* StreamsPlayerSDK.framework in Embed Frameworks */,
+				03A7F7B02A1A5D0D005D8BA0 /* StreamsPlayerSDK.framework in Embed Frameworks */,
+				03A7F7AB2A1A586F005D8BA0 /* TestpressPlayerSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A7F7A42A1A57AD005D8BA0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +97,9 @@
 /* Begin PBXFileReference section */
 		03A0288C2A14B38A00E77495 /* StreamsPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerViewController.swift; sourceTree = "<group>"; };
 		03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIClient.swift; sourceTree = "<group>"; };
+		03A7F7662A1A47CC005D8BA0 /* TestpressAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestpressAPIClient.swift; sourceTree = "<group>"; };
+		03A7F76D2A1A4AC7005D8BA0 /* TestpressPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestpressPlayerViewController.swift; sourceTree = "<group>"; };
+		03A7F7A82A1A57AD005D8BA0 /* TestpressPlayerSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestpressPlayerSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamsPlayerSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ABC3822A12566E00B0A3D4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ABC3872A12566E00B0A3D4 /* StreamsPlayerSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsPlayerSDKTests.swift; sourceTree = "<group>"; };
@@ -81,6 +118,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03A7F7A22A1A57AD005D8BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A7F7B42A1A5F03005D8BA0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03ABC3752A12566E00B0A3D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,7 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A0288E2A163C4500E77495 /* StreamsPlayerSDK.framework in Frameworks */,
+				03A7F7AF2A1A5D0D005D8BA0 /* StreamsPlayerSDK.framework in Frameworks */,
+				03A7F7AA2A1A586F005D8BA0 /* TestpressPlayerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +159,7 @@
 			children = (
 				03ABC3A62A127D7A00B0A3D4 /* ViewController.swift */,
 				03A0288C2A14B38A00E77495 /* StreamsPlayerViewController.swift */,
+				03A7F76D2A1A4AC7005D8BA0 /* TestpressPlayerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +181,7 @@
 				03ABC3782A12566E00B0A3D4 /* StreamsPlayerSDK.framework */,
 				03ABC3822A12566E00B0A3D4 /* Tests.xctest */,
 				03ABC3A02A127D7A00B0A3D4 /* Sample.app */,
+				03A7F7A82A1A57AD005D8BA0 /* TestpressPlayerSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				03ABC3CE2A138EFF00B0A3D4 /* StreamsAPIClient.swift */,
+				03A7F7662A1A47CC005D8BA0 /* TestpressAPIClient.swift */,
 				03A7F7532A1A2C0C005D8BA0 /* BaseAPIClient.swift */,
 			);
 			path = Network;
@@ -214,6 +263,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		03A7F79B2A1A57AD005D8BA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03ABC3732A12566E00B0A3D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,6 +280,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		03A7F7982A1A57AD005D8BA0 /* TestpressPlayerSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A7F7A52A1A57AD005D8BA0 /* Build configuration list for PBXNativeTarget "TestpressPlayerSDK" */;
+			buildPhases = (
+				03A7F79B2A1A57AD005D8BA0 /* Headers */,
+				03A7F79C2A1A57AD005D8BA0 /* Sources */,
+				03A7F7A22A1A57AD005D8BA0 /* Frameworks */,
+				03A7F7A42A1A57AD005D8BA0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestpressPlayerSDK;
+			packageProductDependencies = (
+				03A7F7B32A1A5F03005D8BA0 /* Alamofire */,
+			);
+			productName = StreamsPlayerSDK;
+			productReference = 03A7F7A82A1A57AD005D8BA0 /* TestpressPlayerSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		03ABC3772A12566E00B0A3D4 /* StreamsPlayerSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03ABC38C2A12566E00B0A3D4 /* Build configuration list for PBXNativeTarget "StreamsPlayerSDK" */;
@@ -275,6 +352,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				03A7F7AD2A1A586F005D8BA0 /* PBXTargetDependency */,
+				03A7F7B22A1A5D0D005D8BA0 /* PBXTargetDependency */,
 			);
 			name = Sample;
 			productName = Sample;
@@ -322,6 +401,7 @@
 				03ABC3772A12566E00B0A3D4 /* StreamsPlayerSDK */,
 				03ABC3812A12566E00B0A3D4 /* Tests */,
 				03ABC39F2A127D7900B0A3D4 /* Sample */,
+				03A7F7982A1A57AD005D8BA0 /* TestpressPlayerSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -347,14 +427,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		03A7F79C2A1A57AD005D8BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A7F79D2A1A57AD005D8BA0 /* BaseAPIClient.swift in Sources */,
+				03A7F7A92A1A5806005D8BA0 /* TestpressAPIClient.swift in Sources */,
+				03A7F79E2A1A57AD005D8BA0 /* VideoDetails.swift in Sources */,
+				03A7F79F2A1A57AD005D8BA0 /* StreamsPlayerView.swift in Sources */,
+				03A7F7A12A1A57AD005D8BA0 /* StreamsPlayerError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03ABC3742A12566E00B0A3D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03A7F7542A1A2C0C005D8BA0 /* BaseAPIClient.swift in Sources */,
-				03ABC3CF2A138EFF00B0A3D4 /* StreamsAPIClient.swift in Sources */,
 				03ABC3C92A138B1E00B0A3D4 /* VideoDetails.swift in Sources */,
 				03ABC3B82A134EAA00B0A3D4 /* StreamsPlayerView.swift in Sources */,
+				03A7F7AE2A1A5A1E005D8BA0 /* StreamsAPIClient.swift in Sources */,
 				03ABC3BB2A13565600B0A3D4 /* StreamsPlayerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +466,7 @@
 				03ABC3A72A127D7A00B0A3D4 /* ViewController.swift in Sources */,
 				03A0288D2A14B38A00E77495 /* StreamsPlayerViewController.swift in Sources */,
 				03ABC3A32A127D7A00B0A3D4 /* AppDelegate.swift in Sources */,
+				03A7F76E2A1A4AC7005D8BA0 /* TestpressPlayerViewController.swift in Sources */,
 				03CEE1B12A17488900BBCF0D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +474,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		03A7F7AD2A1A586F005D8BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A7F7982A1A57AD005D8BA0 /* TestpressPlayerSDK */;
+			targetProxy = 03A7F7AC2A1A586F005D8BA0 /* PBXContainerItemProxy */;
+		};
+		03A7F7B22A1A5D0D005D8BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03ABC3772A12566E00B0A3D4 /* StreamsPlayerSDK */;
+			targetProxy = 03A7F7B12A1A5D0D005D8BA0 /* PBXContainerItemProxy */;
+		};
 		03ABC3852A12566E00B0A3D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 03ABC3772A12566E00B0A3D4 /* StreamsPlayerSDK */;
@@ -408,6 +511,83 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		03A7F7A62A1A57AD005D8BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BHAB7LC35Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tpstreams.TestpressPlayerSDK;
+				PRODUCT_MODULE_NAME = TestpressPlayerSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03A7F7A72A1A57AD005D8BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BHAB7LC35Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tpstreams.TestpressPlayerSDK;
+				PRODUCT_MODULE_NAME = TestpressPlayerSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		03ABC38A2A12566E00B0A3D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -660,6 +840,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tpstreams.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -703,6 +884,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03A7F7A52A1A57AD005D8BA0 /* Build configuration list for PBXNativeTarget "TestpressPlayerSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A7F7A62A1A57AD005D8BA0 /* Debug */,
+				03A7F7A72A1A57AD005D8BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03ABC3722A12566E00B0A3D4 /* Build configuration list for PBXProject "StreamsPlayerSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -753,6 +943,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		03A7F7B32A1A5F03005D8BA0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CEE1AD2A17456F00BBCF0D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		03CEE1AE2A17456F00BBCF0D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 03CEE1AD2A17456F00BBCF0D /* XCRemoteSwiftPackageReference "Alamofire" */;

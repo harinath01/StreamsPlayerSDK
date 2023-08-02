@@ -7,12 +7,42 @@
 		<key>Sample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>StreamsPlayerSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>StreamsPlayerSDK.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>03A0286C2A1475E900E77495</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>03ABC3772A12566E00B0A3D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>03ABC3812A12566E00B0A3D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>03ABC39F2A127D7900B0A3D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>03ABC3BD2A1388D000B0A3D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
